@@ -31,19 +31,19 @@ links:
   section_1:
     - title: home
       url: /
-      key_trigger: 1
-    - title: my posts
+      key_trigger: HOME
+    - title: My posts
       url: /posts
-      key_trigger: 2
-    - title: series
+      key_trigger: Posts
+    - title: Series
       url: /series
-      key_trigger: 3
-    - title: tags
+      key_trigger: Series
+    - title: Tags
       url: /tags
-      key_trigger: 4
-    - title: about me
+      key_trigger: Tags
+    - title: 03sunf
       url: /about
-      key_trigger: 5
+      key_trigger: About me
   section_2:
     - title: github
       url: http://www.github.com/victorvoid
