@@ -1,12 +1,12 @@
 # Site settings
 title: 03sunf - Blog
-description: "A blog about lorem ipsum ..."
+description: "03sunf's personal blog."
 baseurl: ""
 url: "http://03sunf.github.io"
 
 # User settings
 username: 03sunf
-user_title: Lorem Ipsum - FrontEnd
+user_title: 03sunf - Blog
 email: contact.deepin2@gmail.com
 twitter_username: 03sunf
 github_username:  03sunf
@@ -46,15 +46,15 @@ links:
       key_trigger: About me
   section_2:
     - title: Github
-      url: http://www.github.com/victorvoid
+      url: http://www.github.com/03sunf/
       new_tab: true
-      key_trigger: github
+      key_trigger: g
     - title: Twitter
-      url: http://www.twitter.com/victorvoid
-      key_trigger: twiter
+      url: http://www.twitter.com/03sunf/
+      key_trigger: t
     - title: Search
       url: ""
-      key_trigger: Search!
+      key_trigger: s
 
 
 # exclude my node related stuff
