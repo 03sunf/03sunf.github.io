@@ -8,11 +8,11 @@ baseurl: ""
 url: "https://03sunf.github.io"
 twitter_username: 03sunf
 github_username:  03sunf
-disqus_shortname: 03sunf
+disqus_shortname: blog-03sunf-com
 
 # Build settings
 include: [_pages]
-markdown: gfm
+markdown: kramdown
 permalink: /:year/:month/:title
 sass:
     style: compressed
