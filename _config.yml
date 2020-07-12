@@ -12,9 +12,9 @@ disqus_shortname: blog-03sunf-com
 
 # Build settings
 include: [_pages]
-markdown:
-    kramdown:
-        input: GFM
+markdown: kramdown
+kramdown:
+    input: GFM
 permalink: /:year/:month/:title
 sass:
     style: compressed
