@@ -4,10 +4,10 @@ description: >
     03sunf's blog🙂
 author: 03sunf
 email: 03sunf@gmail.com
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://03sunf.github.io" # the base hostname & protocol for your site
-twitter_username: https://twitter.com/03sunf
-github_username:  https://github.com/03sunf
+baseurl: ""
+url: "https://03sunf.github.io"
+twitter_username: 03sunf
+github_username:  03sunf
 
 disqus_shortname: 03sunf
 
