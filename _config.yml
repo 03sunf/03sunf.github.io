@@ -1,61 +1,31 @@
 # Site settings
-title: 03sunf - Blog
-description: "03sunf's personal blog."
-baseurl: ""
-url: "http://03sunf.github.io"
+title: Your site
+description: >
+    Your description
+author: Your name
+email: your@e.mail
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://yourname.github.io" # the base hostname & protocol for your site
+twitter_username: YourTwitter
+github_username:  YourGitHub
 
-# User settings
-username: 03sunf
-user_title: 03sunf - Blog
-email: contact.deepin2@gmail.com
-twitter_username: 03sunf
-github_username:  03sunf
-gplus_username:  03sunf
-disqus_username: 03sunf
-profile_picture: https://avatars0.githubusercontent.com/u/34973161?s=460&v=4
+disqus_shortname: YourDisqusShortname
 
 # Build settings
+include: [_pages]
 markdown: kramdown
-highlighter: rouge
-permalink: /:title/
+permalink: /:year/:month/:title
+sass:
+    style: compressed
 
-# html minify
-compress_html:
-  clippings: all
-  comments: all
-  endings: []
-  profile: false
+gems:
+  - jemoji
+  - jekyll-sitemap
+# - amp-jekyll # Acceletrated Mobile Pages
 
-# Links to include in menu navigation
-links:
-  section_1:
-    - title: Home
-      url: /
-      key_trigger: Home
-    - title: My posts
-      url: /posts
-      key_trigger: Blog Posts
-    - title: Series
-      url: /series
-      key_trigger: Series
-    - title: Tags!
-      url: /tags
-      key_trigger: Tags
-    - title: 03sunf
-      url: /about
-      key_trigger: About me
-  section_2:
-    - title: Github
-      url: http://www.github.com/03sunf/
-      new_tab: true
-      key_trigger: g
-    - title: Twitter
-      url: http://www.twitter.com/03sunf/
-      key_trigger: t
-    - title: Search
-      url: ""
-      key_trigger: s
+# AMP Settings
+# ampdir: amp/
+# enable_amp: true
 
-
-# exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules']
+# Google Analytics
+# google_analytics: UA-XXXXXXXX-X
