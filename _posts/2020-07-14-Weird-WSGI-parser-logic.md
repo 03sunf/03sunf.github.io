@@ -2,7 +2,7 @@
 layout: post
 title:  "Weird WSGI parser logic"
 date:   2020-07-14 01:02:00
-tags:   [Flask]
+tags:   [Python, Flask]
 ---
 ### Description
 If Flask Server exposed to an external network alone without a front server like Reverse Proxy, Remote users can Manipulate maliciously the value of `request.host` value. And also Remote user can request with invalid HTTP method.
