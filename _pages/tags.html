@@ -45,10 +45,8 @@ permalink: /tags
 				$(element).addClass('c-archives__item__hidden');
 			}
 		});
-		$('[data-tag]').removeClass('c-tag__selected');
-		$('[data-tag]').addClass('c-tag');
-		$(`[data-tag=${tag}]`).removeClass('c-tag');
-		$(`[data-tag=${tag}]`).addClass('c-tag__selected');
+		$('a[data-tag]').children().removeClass('c-tag__selected')
+		$(`a[data-tag=${tag}]`).children().addClass('c-tag__selected');
 	}
 
 	$('[data-tag]').click((element) => {
