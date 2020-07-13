@@ -31,7 +31,7 @@ if __name__ == "__main__":
 
 
 ### Request
-#### 1. Nomal oneline equest
+#### 1. Nomal oneline request
 ```
 $ nc 10.211.55.3 8080
 GET / HTTP/1.1
