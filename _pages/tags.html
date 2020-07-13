@@ -11,10 +11,10 @@ permalink: /tags
 	})
 
 	function filterByTagName(tagName) {
-		$('.hidden').removeClass('hidden');
-		$('.post-wrapper').each((index, elem) => {
+		$('.c-archives__item__hidden').removeClass('c-archives__item__hidden');
+		$('.c-archives__item').each((index, elem) => {
 			if (!elem.hasAttribute(`data-${tagName}`)) {
-				$(elem).addClass('hidden');
+				$(elem).addClass('c-archives__item__hidden');
 			}
 		});
 		$(`.tag`).removeClass('selected');
