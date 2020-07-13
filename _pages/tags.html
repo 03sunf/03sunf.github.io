@@ -4,22 +4,25 @@ title: Tags
 permalink: /tags
 ---
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<b>Language</b>
+<b>Language</b></br>
 {% for tag in site.data.tags.language %}
 	<a href="#{{ tag }}" data-tag="{{ tag }}"><span class="c-tag">{{ tag }}</span></a>
 {% endfor %}
 </br>
-<b>Framework</b>
+</br>
+<b>Framework</b></br>
 {% for tag in site.data.tags.framework %}
 	<a href="#{{ tag }}" data-tag="{{ tag }}"><span class="c-tag">{{ tag }}</span></a>
 {% endfor %}
 </br>
-<b>Database</b>
+</br>
+<b>Database</b></br>
 {% for tag in site.data.tags.database %}
 	<a href="#{{ tag }}" data-tag="{{ tag }}"><span class="c-tag">{{ tag }}</span></a>
 {% endfor %}
 </br>
-<b>Vulnerblities</b>
+</br>
+<b>Vulnerblities</b></br>
 {% for tag in site.data.tags.vulnerblities %}
 	<a href="#{{ tag }}" data-tag="{{ tag }}"><span class="c-tag">{{ tag }}</span></a>
 {% endfor %}
