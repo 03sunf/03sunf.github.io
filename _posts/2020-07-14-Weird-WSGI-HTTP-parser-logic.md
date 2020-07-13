@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Weird WSGI parser logic"
-date:   2020-07-14 01:02:00
+title:  "Weird WSGI HTTP parser logic"
+date:   2020-07-14 03:10:00
 tags:   [Python, Flask]
 ---
 ### Description
