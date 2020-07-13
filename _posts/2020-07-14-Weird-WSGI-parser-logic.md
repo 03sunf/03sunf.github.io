@@ -200,7 +200,8 @@ def url_parse(url, scheme=None, allow_fragments=True):
 <br/>
 
 
-Let's add some print function for debug, and we can check url_parse function redefine scheme and url if there is more than one semicolon. If we request like `GET X://google.com/ HTTP/0.1337` then scheme variable becomes `http` by replace and url variable becomes `//google.com/` in comment `Part 1`. Also comment `Part 2` compares first 2bytes with `//` and it defines perpect `google.com` netloc.
+We can check url_parse function redefine scheme variable and url variable if there is more than one semicolon in url variable.
+When we request `GET X://google.com/ HTTP/0.1337`, scheme variable be defined `http` and url variable be defined `//google.com/` in comment `Part 1`. Also comment `Part 2` compares first 2bytes with `//` and `google.com` is stored in the netloc variable.
 
 ```python
 # GET / HTTP/1.1
@@ -222,7 +223,7 @@ netloc => google.com
 <br/>
 
 
-This is the final WSGI environ object `GET X://google.com/ HTTP/0.1337`.
+This is the final WSGI environ object `GET X://google.com/ HTTP/0.1337`. I guess some Flask module referencing the Flask.request object may have an effect.
 ```
 {
    "wsgi.multiprocess":False,
