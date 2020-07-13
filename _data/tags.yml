@@ -1,3 +1,7 @@
+- SSRF
 - SQLi
 - XSS
+- XXE
+- RFI
 - LFI
+- RCE
