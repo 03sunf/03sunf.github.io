@@ -36,7 +36,7 @@ permalink: /tags
 		{% endif %}
 		<li class="c-archives__item" {% for tag in post.tags %}data-{{ tag }}{% endfor %}>
 			<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-			<p class="c-article__time"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+			<p>{{ post.date | date: "%b %-d, %Y" }}</p>
 			</br>
 			{% for tag in post.tags %}
 				<span class="c-tag">{{ tag }}</span>
