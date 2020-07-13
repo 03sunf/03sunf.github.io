@@ -2,6 +2,10 @@ language: [
     ASP, JSP, PHP, Python, Nodejs, Ruby
 ]
 
+servers: [
+    Apache, Tomcat, Nginx, IIS, WebtoB
+]
+
 framework: [
     Tornado, Flask, Rails, Express, Laravel, React, Vue
 ]
