@@ -1,6 +1,7 @@
-Language: [
-  ASP, JSP, PHP, Python, Nodejs, Ruby
-]
+category: "language" 
+  tag: [
+    ASP, JSP, PHP, Python, Nodejs, Ruby
+  ]
 
 Framework:
   - Tornado
