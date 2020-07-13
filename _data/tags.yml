@@ -1,34 +1,34 @@
-# Language
-- ASP
-- JSP
-- PHP
-- Python
-- Nodejs
-- Ruby
+Language:
+  - ASP
+  - JSP
+  - PHP
+  - Python
+  - Nodejs
+  - Ruby
 
-# Framework
-- Tornado
-- Flask
-- Rails
-- Express
-- Laravel
-- React
-- Vue
+Framework:
+  - Tornado
+  - Flask
+  - Rails
+  - Express
+  - Laravel
+  - React
+  - Vue
 
-# SQL / NoSQL
-- MySQL
-- MSSQL
-- Oracle
-- Mongodb
-- Memcached
-- Redis
+Database:
+  - MySQL
+  - MSSQL
+  - Oracle
+  - Mongodb
+  - Memcached
+  - Redis
 
-# Vulnerblities
-- SSRF
-- SSTI
-- SQLi
-- XSS
-- XXE
-- RFI
-- LFI
-- RCE
+Vulnerblities:
+  - SSRF
+  - SSTI
+  - SQLi
+  - XSS
+  - XXE
+  - RFI
+  - LFI
+  - RCE
