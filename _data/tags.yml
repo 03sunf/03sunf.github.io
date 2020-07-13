@@ -1,8 +1,12 @@
 category: "language" 
-tag: [ASP, JSP, PHP, Python, Nodejs, Ruby]
+tag: [
+    ASP, JSP, PHP, Python, Nodejs, Ruby
+]
 
 category: "framework"
-tag: [Tornado, Flask, Rails, Express, Laravel, React, Vue]
+tag: [
+    Tornado, Flask, Rails, Express, Laravel, React, Vue
+]
 
 category: "database"
 tag: [
