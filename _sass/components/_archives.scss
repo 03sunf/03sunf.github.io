@@ -16,6 +16,10 @@
     list-style: none;
 }
 
+.c-archives__list__hidden {
+   display: none;
+}
+
 .c-archives__item {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -46,8 +50,4 @@
         @include fs--body;
         color: #515862;
     }
-}
-
-.hidden {
-   display: none;
 }
