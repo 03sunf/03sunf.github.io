@@ -47,8 +47,8 @@ permalink: /tags
 		});
 		$('.c-tag').removeClass('c-tag__selected');
 		$('.c-tag').addClass('c-tag');
-		$('[data-tag=${tag}]').removeClass('c-tag');
-		$('[data-tag=${tag}]').addClass('c-tag__selected');
+		$(`[data-tag=${tag}]`).removeClass('c-tag');
+		$(`[data-tag=${tag}]`).addClass('c-tag__selected');
 	}
 
 	$('[data-tag]').click((element) => {
