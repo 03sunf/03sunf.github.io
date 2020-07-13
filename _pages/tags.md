@@ -5,8 +5,8 @@ permalink: /tags
 ---
 
 {% for tag in site.data.tags %}
-  <span class="tag" data-tag="{{tag}}">
-    {{ site.data.format[tag] }}
+  <span class="tag" data-tag="{{ tag }}">
+    {{ tag }}
   </span>
 {% endfor %}
 <section class="c-archives">
