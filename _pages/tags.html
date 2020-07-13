@@ -5,7 +5,7 @@ permalink: /tags
 ---
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-	$("a.[data-tag]").click((e) => {
+	$("[data-tag]").click((e) => {
 		currentTag = e.target.dataset.tag;
 		filterByTagName(currentTag);
 	})
@@ -23,7 +23,7 @@ permalink: /tags
 </script>
 
 {% for tag in site.data.tags %}
-	<a href="#{{ tag }}" data-tag="{{ tag }}"><span class="ctag">{{ tag }}</span></a>
+	<a href="#{{ tag }}" data-tag="{{ tag }}"><span class="c-tag">{{ tag }}</span></a>
 {% endfor %}
 
 <section class="c-archives">
