@@ -23,7 +23,7 @@ permalink: /tags
 </script>
 
 {% for tag in site.data.tags %}
-	<a href="#" data-tag="{{ tag }}">
+	<a href="#{{ tag }}" data-tag="{{ tag }}">
 		<span class="c-tag">{{ tag }}</span>
 	</a>
 {% endfor %}
