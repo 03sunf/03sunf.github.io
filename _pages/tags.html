@@ -8,7 +8,7 @@ permalink: /tags
 	$("[data-tag]").click((e) => {
 		currentTag = e.target.innerText;
 		filterByTagName(currentTag);
-	})
+	});
 
 	function filterByTagName(tagName) {
 		$('li.c-archives__item__hidden').removeClass('c-archives__item__hidden');
