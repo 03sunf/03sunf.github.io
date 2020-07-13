@@ -79,8 +79,8 @@ Date: Mon, 13 Jul 2020 15:54:06 GMT
 
 google.com
 ```
-</br>
-</br>
+<br/>
+<br/>
 
 
 ### Analyse
@@ -138,8 +138,8 @@ environ = {
 if request_url.scheme and request_url.netloc:
     environ["HTTP_HOST"] = request_url.netloc
 ```
-</br>
-</br>
+<br/>
+<br/>
 
 
 Now we know `HTTP_HOST` is created by request_url.netloc, and also request_url created by url_parse function, and this one is defined in urls.py. 
@@ -196,8 +196,8 @@ def url_parse(url, scheme=None, allow_fragments=True):
     result_type = URL if is_text_based else BytesURL
     return result_type(scheme, netloc, url, query, fragment)
 ```
-</br>
-</br>
+<br/>
+<br/>
 
 
 Let's add some print function for debug, and we can check url_parse function redefine scheme and url if there is more than one semicolon. If we request like `GET X://google.com/ HTTP/0.1337` then scheme variable becomes `http` by replace and url variable becomes `//google.com/` in comment `Part 1`. Also comment `Part 2` compares first 2bytes with `//` and it defines perpect `google.com` netloc.
@@ -218,8 +218,8 @@ after netloc => google.com | after url => /
 netloc => google.com
 10.211.55.2 - - [14/Jul/2020 02:26:09] "GET x://google.com/ HTTP/1.1" 200 -
 ```
-</br>
-</br>
+<br/>
+<br/>
 
 
 This is the final WSGI environ object `GET X://google.com/ HTTP/0.1337`.
