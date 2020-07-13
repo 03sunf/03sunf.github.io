@@ -11,7 +11,7 @@ If Flask Server exposed to an external network alone without a front server like
 
 
 ### Server code
-When there is a server running with the following code, a normal HTTP request returns the requested hostname. But remote user can control `request.host` value with online request. This weird parser logic makes the potential to be derived from another attack, such as SSRF.
+When there is a server running with the following code, a normal HTTP request returns the requested hostname. But remote user can control `request.host` value with oneline request. This weird parser logic makes the potential to be derived from another attack, such as SSRF.
 
 ```python
 from flask import Flask
@@ -31,7 +31,7 @@ if __name__ == "__main__":
 
 
 ### Request
-#### 1. Nomal online equest
+#### 1. Nomal oneline equest
 ```
 $ nc 10.211.55.3 8080
 GET / HTTP/1.1
