@@ -1,19 +1,19 @@
 language: [
-    ASP, JSP, PHP, Python, Nodejs, Ruby, Perl, Go
+    Python
 ]
 
 servers: [
-    Apache, Tomcat, Nginx, IIS, WebtoB
+    Continue
 ]
 
 framework: [
-    Tornado, Flask, Rails, Express, Laravel, React, Vue
+    Flask
 ]
 
 database: [
-    MySQL, MSSQL, Oracle, Mongodb, Memcached, Redis
+    Continue
 ]
 
 vulnerblities: [
-    SSRF, SSTI, SQLi, XSS, XXE, RFI, LFI, RCE
+    LFI
 ]
