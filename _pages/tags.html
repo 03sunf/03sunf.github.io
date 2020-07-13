@@ -4,14 +4,12 @@ title: Tags
 permalink: /tags
 ---
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<p>modified5</p>
+<p>modified6</p>
 {% for div in site.data.tags %}
-	<p>{{ div }}</p></br>
-<!--
-	{% for tag in div %}
+	<p>{{ div.category }}</p></br>
+	{% for tag in div.tag %}
 		<a href="#{{ tag }}" data-tag="{{ tag }}"><span class="c-tag">{{ tag }}</span></a>
 	{% endfor %}
--->
 {% endfor %}
 <section class="c-archives">
 	{% for post in site.posts  %}
