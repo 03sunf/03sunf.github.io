@@ -1,19 +1,15 @@
 category: "language" 
-  tag: [
-    ASP, JSP, PHP, Python, Nodejs, Ruby
-  ]
+tag: [ASP, JSP, PHP, Python, Nodejs, Ruby]
 
 category: "framework"
-  tag: [
-    Tornado, Flask, Rails, Express, Laravel, React, Vue
-  ]
+tag: [Tornado, Flask, Rails, Express, Laravel, React, Vue]
 
 category: "database"
-  tag: [
+tag: [
     MySQL, MSSQL, Oracle, Mongodb, Memcached, Redis
-  ]
+]
 
 category: "vulnerblities"
-  tag: [
+tag: [
     SSRF, SSTI, SQLi, XSS, XXE, RFI, LFI, RCE
-  ]
+]
