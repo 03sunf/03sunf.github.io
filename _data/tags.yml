@@ -1,5 +1,5 @@
 language: [
-    ASP, JSP, PHP, Python, Nodejs, Ruby
+    ASP, JSP, PHP, Python, Nodejs, Ruby, Perl, Go
 ]
 
 servers: [
