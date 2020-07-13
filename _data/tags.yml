@@ -2,7 +2,7 @@ language: [
     ASP, JSP, PHP, Python, Nodejs, Ruby
 ]
 
-category: [
+framework: [
     Tornado, Flask, Rails, Express, Laravel, React, Vue
 ]
 
