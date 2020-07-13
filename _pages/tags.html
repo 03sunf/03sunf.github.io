@@ -37,7 +37,7 @@ permalink: /tags
 		<li class="c-archives__item">
 			<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
 			{% for tag in post.tags %}
-				<span class="c-tag">{{ tag }}</span>
+				<span class="c-tag" data-tag="{{ tag }}">{{ tag }}</span>
 			{% endfor %}
 		</li>
 	{% endfor %}
