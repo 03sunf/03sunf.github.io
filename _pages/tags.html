@@ -5,20 +5,20 @@ permalink: /tags
 ---
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-	$("[data-tag]").click((e) => {
-		currentTag = e.target.innerText;
-		filterByTagName(currentTag);
+	$('[data-tag]').click((element) => {
+		tag = element.target.innerText;
+		filter(tag);
 	});
 
-	function filterByTagName(tagName) {
+	function filter(tag) {
 		$('li.c-archives__item__hidden').removeClass('c-archives__item__hidden');
-		$('li.c-archives__item').each((index, elem) => {
-			if (!elem.hasAttribute(`data-${tagName}`)) {
-				$(elem).addClass('c-archives__item__hidden');
+		$('li.c-archives__item').each((index, element) => {
+			if (!element.hasAttribute(`data-${tag}`)) {
+				$(element).addClass('c-archives__item__hidden');
 			}
 		});
 		$(`.c-tag`).removeClass('selected');
-		$(`.c-tag[data-tag=${tagName}]`).addClass('selected');
+		$(`.c-tag[data-tag=${tag}]`).addClass('selected');
 	}
 </script>
 
