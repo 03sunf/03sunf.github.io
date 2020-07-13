@@ -36,7 +36,9 @@ function filterByTagName(tagName) {
     {% endif %}
         <li class="c-archives__item">
             <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-            <p>{{ post.tag }}</p>
+          	{% for tag in page.tags %}
+              <span class="c-tag">{{ tag }}</span>
+			      {% endfor %}
         </li>
 {% endfor %}
 </section>
