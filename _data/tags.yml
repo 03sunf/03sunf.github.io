@@ -1,10 +1,10 @@
 Language:
-  - "ASP"
-  - "JSP"
-  - "PHP"
-  - "Python"
-  - "Nodejs"
-  - "Ruby"
+- "ASP"
+- "JSP"
+- "PHP"
+- "Python"
+- "Nodejs"
+- "Ruby"
 
 Framework:
   - Tornado
