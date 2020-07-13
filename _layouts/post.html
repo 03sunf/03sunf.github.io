@@ -2,7 +2,8 @@
 layout: page
 ---
 <article class="c-article">
-    <header class="c-article__header" align="center">
+    <header class="c-article__header">
+    <center>
         <h1 class="c-article__title">{{ page.title }}</h1>
         <p class="c-article__time"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
         <p>
@@ -10,6 +11,7 @@ layout: page
                 <span class="c-tag">{{ tag }}</span>
             {% endfor %}
         </p>
+    </center>
     </header>
     <div class="c-article__main">
         {{ content }}
