@@ -6,9 +6,9 @@ permalink: /tags
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <p>modified4</p>
 {% for div in site.data.tags %}
-	{% for tag in div %}
-	<p>{{ tag }}</p></br>
+	<p>{{ div }}</p></br>
 <!--
+	{% for tag in div %}
 		<a href="#{{ tag }}" data-tag="{{ tag }}"><span class="c-tag">{{ tag }}</span></a>
 -->
 	{% endfor %}
