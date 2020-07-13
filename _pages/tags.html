@@ -11,35 +11,36 @@ permalink: /tags
 {% for tag in site.data.tags.language %}
 	<a href="#{{ tag }}" data-tag="{{ tag }}"><span class="c-tag">{{ tag }}</span></a>
 {% endfor %}
-</br>
-</br>
+<br/>
+<br/>
 <b>Servers</b></br>
 {% for tag in site.data.tags.servers %}
 	<a href="#{{ tag }}" data-tag="{{ tag }}"><span class="c-tag">{{ tag }}</span></a>
 {% endfor %}
-</br>
-</br>
+<br/>
+<br/>
 <b>Framework</b></br>
 {% for tag in site.data.tags.framework %}
 	<a href="#{{ tag }}" data-tag="{{ tag }}"><span class="c-tag">{{ tag }}</span></a>
 {% endfor %}
-</br>
-</br>
+<br/>
+<br/>
 <b>Database</b></br>
 {% for tag in site.data.tags.database %}
 	<a href="#{{ tag }}" data-tag="{{ tag }}"><span class="c-tag">{{ tag }}</span></a>
 {% endfor %}
-</br>
-</br>
+<br/>
+<br/>
 <b>Vulnerblities</b></br>
 {% for tag in site.data.tags.vulnerblities %}
 	<a href="#{{ tag }}" data-tag="{{ tag }}"><span class="c-tag">{{ tag }}</span></a>
 {% endfor %}
-</br>
+<br/>
 <section class="c-archives">
 	{% for post in site.posts  %}
-		<li class="c-archives__item" {% for tag in post.tags %}data-{{ tag }}{% endfor %}>
+		<li class="c-archives__item"{% for tag in post.tags %} data-{{ tag }}{% endfor %}>
 			<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+			<br/>
 			{% for tag in post.tags %}
 				<span class="c-tag">{{ tag }}</span>
 			{% endfor %}
