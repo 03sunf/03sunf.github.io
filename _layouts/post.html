@@ -2,16 +2,14 @@
 layout: page
 ---
 <article class="c-article">
-    <header class="c-article__header">
-        <center>
-            <h1 class="c-article__title">{{ page.title }}</h1>
-            <p class="c-article__time"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
-            <p>
-                {% for tag in page.tags %}
-                    <span class="c-tag">{{ tag }}</span>
-                {% endfor %}
-            </p>
-	</center>
+    <header class="c-article__header" align="center">
+        <h1 class="c-article__title">{{ page.title }}</h1>
+        <p class="c-article__time"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+        <p>
+            {% for tag in page.tags %}
+                <span class="c-tag">{{ tag }}</span>
+            {% endfor %}
+        </p>
     </header>
     <div class="c-article__main">
         {{ content }}
