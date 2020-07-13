@@ -40,6 +40,7 @@ permalink: /tags
 	<a href="#{{ tag }}" data-tag="{{ tag }}"><span class="c-tag">{{ tag }}</span></a>
 {% endfor %}
 <br/>
+<br/>
 <section class="c-archives">
 	{% for post in site.posts  %}
 		<li class="c-archives__item"{% for tag in post.tags %} data-{{ tag }}{% endfor %}>
