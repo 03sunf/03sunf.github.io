@@ -30,6 +30,7 @@ Version must be defined on the top of docker-compose.yml file. docker-compose.ym
 | 2.1                 | 1.12.0+               |
 | 2.0                 | 1.10.0+               |
 | 1.0                 | 1.9.1.+               |
+|=============================================|
 <br/>
 <br/>
 
