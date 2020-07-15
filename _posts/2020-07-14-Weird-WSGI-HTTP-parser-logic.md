@@ -201,7 +201,7 @@ def url_parse(url, scheme=None, allow_fragments=True):
 
 
 We can check url_parse function redefine scheme variable and url variable if there is more than one semicolon in url variable.
-When we request `GET X://google.com/ HTTP/0.1337`, scheme variable be defined `http` and url variable be defined `//google.com/` in comment `Part 1`. Also comment `Part 2` compares first 2bytes with `//` and `google.com` is stored in the netloc variable.
+When we request `GET X://google.com/ HTTP/0.1337`, scheme variable be lowercased as `x` and url variable be defined `//google.com/` in comment `Part 1`. Also comment `Part 2` compares first 2bytes with `//` and `google.com` is stored in the netloc variable.
 
 ```python
 # GET / HTTP/1.1
