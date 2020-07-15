@@ -11,7 +11,8 @@ This post is guding docker-compose.yml writing examples and easy way to docker-c
 
 
 ### docker-compose.yml file version
-Version must be defined on the top of docker-compose.yml file. docker-compose.yml version is mapping with docker version. Just type `docker --version` and check with the flowing this table.  
+Version must be defined on the top of docker-compose.yml file. docker-compose.yml version is mapping with docker version. Just type `docker --version` and check with the flowing this table.
+<br/>
 |   Compose file format   |   Docker Engine release   |
 | :---------------------: | :-----------------------: |
 |           3.8           |         19.03.0+          |
@@ -49,9 +50,9 @@ services: # Services
         volumes:
             - ./app:/app # Create directory voulme from host's ./app directory to container's /app directory.
         working_dir: /app # Set working directory of container.
-        networks:
-            express-mongo:
-                ipv4_address: 172.0.0.10
+        networks: # Set network band and ipv4 address.
+            express-mongo: # Uses express-mongo custom network.
+                ipv4_address: 172.0.0.10 # Container ipv4 address.
  
     db: # Define another db container
         container_name: mongodb # Set container name.
@@ -64,12 +65,12 @@ services: # Services
             express-mongo:
                 ipv4_address: 172.0.0.20
                 
-networks:
-    express-mongo:
-        driver: bridge
+networks: # Define network.
+    express-mongo: # Network name si express-mongo.
+        driver: bridge # Use bridge.
         ipam:
             config:
-                subnet: 172.0.0.0/24
+                subnet: 172.0.0.0/24 # Network subnet.
 ```
 
 It would be updated soon...
