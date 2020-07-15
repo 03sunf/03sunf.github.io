@@ -7,7 +7,7 @@ servers: [
 ]
 
 framework: [
-    Docker, Flask
+    Flask
 ]
 
 database: [
