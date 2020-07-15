@@ -12,7 +12,8 @@ This post is guding docker-compose.yml writing examples and easy way to docker-c
 
 ### docker-compose.yml file version
 Version must be defined on the top of docker-compose.yml file. docker-compose.yml version is mapping with docker version. Just type `docker --version` and check with the flowing this table.
-<br/>
+
+
 | Compose file format | Docker Engine release |
 | :-----------------: | :-------------------: |
 | 3.8                 | 19.03.0+              |
@@ -31,6 +32,8 @@ Version must be defined on the top of docker-compose.yml file. docker-compose.ym
 | 2.0                 | 1.10.0+               |
 | 1.0                 | 1.9.1.+               |
 |=============================================|
+
+
 <br/>
 <br/>
 
