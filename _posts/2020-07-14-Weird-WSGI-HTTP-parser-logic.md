@@ -108,7 +108,7 @@ def make_environ(self):
 
 environ = {
     "wsgi.version": (1, 0),
-    "wsgi.url_scheme": url_scheme,
+    "wsgi.url_scheme": url_scheme, # It becomes http or https, doesn't refer to request_url variable.
     "wsgi.input": self.rfile,
     "wsgi.errors": sys.stderr,
     "wsgi.multithread": self.server.multithread,
@@ -218,6 +218,53 @@ scheme => x | url => //google.com/
 after netloc => google.com | after url => /
 netloc => google.com
 10.211.55.2 - - [14/Jul/2020 02:26:09] "GET x://google.com/ HTTP/1.1" 200 -
+```
+<br/>
+<br/>
+
+
+Back to the make_environ method in serving.py, We can know and check how environ object created.
+```python
+##### RETURN VALUE OF URL_PARSE #####
+# request => GET X://google.com/ HTTP/0.1337
+# scheme => x
+# netloc => google.com
+# url => /
+# query =>
+# fragment =>
+#####################################
+
+environ = {
+    "wsgi.version": (1, 0),
+    "wsgi.url_scheme": url_scheme,
+    "wsgi.input": self.rfile,
+    "wsgi.errors": sys.stderr,
+    "wsgi.multithread": self.server.multithread,
+    "wsgi.multiprocess": self.server.multiprocess,
+    "wsgi.run_once": False,
+    "werkzeug.server.shutdown": shutdown_server,
+    "SERVER_SOFTWARE": self.server_version,
+    "REQUEST_METHOD": self.command,
+    "SCRIPT_NAME": "",
+    "PATH_INFO": wsgi_encoding_dance(path_info),
+    "QUERY_STRING": wsgi_encoding_dance(request_url.query),
+    # Non-standard, added by mod_wsgi, uWSGI
+    "REQUEST_URI": wsgi_encoding_dance(self.path),
+    # Non-standard, added by gunicorn
+    "RAW_URI": wsgi_encoding_dance(self.path),
+    "REMOTE_ADDR": self.address_string(),
+    "REMOTE_PORT": self.port_integer(),
+    "SERVER_NAME": self.server.server_address[0],
+    "SERVER_PORT": str(self.server.server_address[1]),
+    "SERVER_PROTOCOL": self.request_version,
+}
+
+...
+
+# Per RFC 2616, if the URL is absolute, use that as the host.
+# We're using "has a scheme" to indicate an absolute URL.
+if request_url.scheme and request_url.netloc:
+    environ["HTTP_HOST"] = request_url.netloc
 ```
 <br/>
 <br/>
