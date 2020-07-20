@@ -15,5 +15,5 @@ database: [
 ]
 
 vulnerblities: [
-    LFI
+    RCE, LFI
 ]
