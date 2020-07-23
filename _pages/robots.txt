@@ -1,0 +1,8 @@
+---
+layout: page
+title: Beep - Beep!
+permalink: /robots.txt
+---
+User-agent: *
+Allow: *
+Sitemap: https://blog.03sunf.com/sitemap.xml
