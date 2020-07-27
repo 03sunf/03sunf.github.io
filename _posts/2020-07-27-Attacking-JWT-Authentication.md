@@ -72,7 +72,7 @@ Body = {
 ```
 jwt = JWT.decode(token, public_key)
 ```
-If there is a part of the decode JWT like above example and server trusts algorithm of token header, JWT using the existing `RS256` normally checks the signature of the token, but JWT using the `HS256` uses the second argument `public_key` as the decryption key to change the algorithm when the public key is obtained. Internal data can be changed.
+If attacker has public key and there is a part of the decode JWT like above example trusting algorithm of token header, JWT using the existing `RS256` normally checks the signature of the token, but JWT using the `HS256` uses the second argument `public_key` as the decryption key to change the algorithm when the public key is obtained. Internal data can be changed.
 ```
 # Before
 Headers = {
