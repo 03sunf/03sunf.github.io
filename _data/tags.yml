@@ -15,5 +15,5 @@ database: [
 ]
 
 vulnerblities: [
-    RCE, LFI
+    RCE, LFI, JWT
 ]
