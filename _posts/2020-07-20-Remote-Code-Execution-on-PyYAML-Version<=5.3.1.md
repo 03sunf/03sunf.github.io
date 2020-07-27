@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Remote Code Execution on PyYAML Version<=5.3.1."
+title:  "Remote Code Execution on PyYAML Version<=5.3.1"
 date:   2020-07-20 17:07:00
 tags:   [RCE, Python]
 ---
