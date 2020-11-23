@@ -2,7 +2,7 @@
 layout: post
 title:  "After finding LFI vulnerability"
 date:   2020-12-23 22:30:00
-tags:   [PHP]
+tags:   [PHP, OI]
 ---
 
 ## Description
