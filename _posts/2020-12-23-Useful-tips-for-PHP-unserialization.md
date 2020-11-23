@@ -14,7 +14,7 @@ This post contains useful tips about php unserialization.
 ## PHP Serialization
 PHP Serialized data follows this data type. and also you can easily understand a serialized output of a class that is under this.
 
-```php
+```
 Anatomy of a serialize()'ed value:
 
 String
