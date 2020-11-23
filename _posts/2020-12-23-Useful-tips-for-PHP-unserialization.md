@@ -60,12 +60,11 @@ class Testclass
     private $p3 = 'private';
 }
 ```
-|   Type    |       Result        |
-| :-------: | :-----------------: |
-|  public   |         p1          |
-| protected |     \x00*\x00p2     |
-|  private  | \x00Testclass\x00p3 |
-
+```
+public    -> p1
+protected -> \x00*\x00p2
+private   -> \x00Textclass\x00p3
+```
 <br/>
 <br/>
 
