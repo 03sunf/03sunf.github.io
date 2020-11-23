@@ -7,22 +7,37 @@ tags:   [PHP, OI]
 
 ## Description
 This post contains useful tips about php unserialization.
-</br>
-</br>
+<br/>
+<br/>
 
 
 ## PHP Serialization
 PHP Serialized data follows this data type. and also you can easily understand a serialized output of a class that is under this.
 
-|      Type       |                            Value                             |
-| :-------------: | :----------------------------------------------------------: |
-|     String      |                        s:size:value;                         |
-| String(unicode) |                        S:size:value;                         |
-|     Integer     |                           i:value;                           |
-|     Boolean     |                           b:value;                           |
-|      Null       |                              N;                              |
-|      Array      | a:size:{key definition;value definition;(repeated per element)} |
-|     Object      | O:strlen(object name):object name:object size:{s:strlen(property name):property name:property definition;(repeated per property)} |
+```php
+Anatomy of a serialize()'ed value:
+
+String
+s:size:value;
+
+String(unicode)
+S:size:value;
+
+Integer
+i:value;
+
+Boolean
+b:value; (does not store "true" or "false", does store '1' or '0')
+
+Null
+N;
+
+Array
+a:size:{key definition;value definition;(repeated per element)}
+
+Object
+O:strlen(object name):object name:object size:{s:strlen(property name):property name:property definition;(repeated per property)}
+```
 ```php
 class Testclass
 {
@@ -32,8 +47,8 @@ class Testclass
 ```php
 O:9:"Testclass":1:{s:2:"p1";s:6:"public";}
 ```
-</br>
-</br>
+<br/>
+<br/>
 
 
 There are three different types of properties in this class. and three different name come out when you serialize it.
@@ -51,8 +66,8 @@ class Testclass
 | protected |     \x00*\x00p2     |
 |  private  | \x00Testclass\x00p3 |
 
-</br>
-</br>
+<br/>
+<br/>
 
 
 ## Tips
