@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "XSS with Apache2 type-map handler"
-date:   2020-11-29 22:30:00
+date:   2020-11-29 23:48:00
 tags:   [Apache2, XSS]
 ---
 
