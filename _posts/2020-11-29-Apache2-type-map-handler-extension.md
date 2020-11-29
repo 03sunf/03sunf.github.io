@@ -29,6 +29,14 @@ AddHandler type-map .var
 
 ## XSS with var exntension
 `AddHandler type-map .var` is applied by default in Apache2. so when you can't use `html` or `htm` extension, you can use `var` to trigger xss.
+```
+# /etc/apache2/mods-enabled/mime.conf
+232     # For type maps (negotiated resources):
+233     # (This is enabled by default to allow the Apache "It Worked" page
+234     #  to be distributed in multiple languages.)
+235     #
+236     AddHandler type-map var
+```
 
 ```
 ➜  ~ cat test.var
