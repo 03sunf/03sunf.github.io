@@ -4,7 +4,7 @@ language: [
 ]
 
 servers: [
-    Continue
+    Nginx, Apache2
 ]
 
 framework: [
@@ -16,5 +16,5 @@ database: [
 ]
 
 vulnerblities: [
-    RCE, LFI, JWT, OI
+    RCE, XSS, LFI, JWT, OI
 ]
